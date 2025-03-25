@@ -1,3 +1,6 @@
+require("dotenv").config()
+const Person = require("../models/person")
+
 const personName = "Alex Koffi";
 
 Person.findOneAndUpdate(

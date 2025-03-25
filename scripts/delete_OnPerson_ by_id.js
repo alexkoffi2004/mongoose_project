@@ -1,4 +1,7 @@
-const personId = "ID_A_REMPLACER";
+require("dotenv").config()
+const Person = require("../models/person")
+
+const personId = "";
 
 Person.findByIdAndRemove(personId)
     .then(deletedPerson => console.log("Personne supprimée :", deletedPerson))
